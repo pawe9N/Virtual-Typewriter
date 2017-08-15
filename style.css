@@ -1,15 +1,19 @@
+body{
+	transform: translateY(15em);
+}
 #container{
+	transform: translateY(-15em);
 	display: none;
 	position: fixed;
 	left: 0;
 	top: 0;
+	width: 35em;
+	height: 15em;
 	background-color: #323232;
 	background: url('http://ninnalu.typepad.com/.a/6a014e5fd24b87970c01b7c73a7827970b-pi');
 	border-radius: 0.5em;
 	font-family: 'Special Elite', cursive;
 	user-select: none;
-	overflow: hidden;
-	z-index: 2147483647;
 }
 #capslock{
 	background-color: #ccac86;
