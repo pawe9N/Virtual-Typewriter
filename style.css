@@ -11,6 +11,7 @@
 	overflow: hidden;
 	z-index: 2147483647;
 }
+
 #capslock{
 	background-color: #ccac86;
 	border: 1px solid white;
@@ -23,9 +24,11 @@
 	color: white;
 	box-shadow: 0 6px #999;
 }
+
 #keyboard{
 	margin: 3.5em auto;
 }
+
 .litera{
 	font-size: 1.4em;
 	color: white;
@@ -40,24 +43,29 @@
 	background-color: #ccac86;
 	box-shadow: 0 6px #999;
 }
-.litera:hover, #capslock:hover, #backspace:hover{
+
+.litera:hover, #capslock:hover, #backspace:hover, #closeButton:hover{
 	cursor: pointer;
 	background-color: #aa7f4b;
 }
-.litera:active, #capslock:active, #backspace:active{
+
+.litera:active, #capslock:active, #backspace:active, #closeButton:active{
 	box-shadow: 0 6px #666;
 	transform: translateY(3px);
 	cursor: pointer;
 	background-color: #aa7f4b;
 }
+
 .bottom{
 	margin-left: 2em;
 }
+
 #space{
 	background-color: #ccac86;
 	width: 14em;
 	margin-top: 0.6em;
 }
+
 #backspace{
 	background-color: #ccac86;
 	border: 1px solid white;
@@ -66,6 +74,19 @@
 	position: absolute;
 	right: 1em;
 	top: 0.5em;
+	font-size: 1.4em;
+	color: white;
+	box-shadow: 0 6px #999;
+}
+
+#closeButton{
+	background-color: #ccac86;
+	border: 1px solid white;
+	padding: 0.3em;
+	border-radius: 2em;
+	position: absolute;
+	right: 0.5em;
+	bottom: 0.5em;
 	font-size: 1.4em;
 	color: white;
 	box-shadow: 0 6px #999;

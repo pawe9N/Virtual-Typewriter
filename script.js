@@ -15,8 +15,7 @@ var intervalHandler;
 
 Initialization();
 
-var dm = document.getElementById('container'); 
-dm.addEventListener('dragstart',drag_start,false); 
+container.addEventListener('dragstart',drag_start,false); 
 document.body.addEventListener('dragover',drag_over,false); 
 document.body.addEventListener('drop',drop,false); 
 
@@ -42,7 +41,6 @@ function Initialization(){
 	let	inp2 = document.querySelectorAll('input[type=""]');
 	addingListenersToInputs(inp2);
 	
-
 	let newBackspace= document.createElement('div');
 	newBackspace.innerHTML = "Backspace";
 	newBackspace.id = "backspace";
@@ -56,6 +54,14 @@ function Initialization(){
 	newBackspace.addEventListener('mouseup', function(){
 		Backspace2out();
 	});
+	
+	let closeButton = document.createElement('div');
+	closeButton.innerHTML = "Close";
+	closeButton.id = 'closeButton';
+	container.appendChild(closeButton);
+	closeButton.addEventListener('click', function(){
+		container.style.display = 'none';
+	})
 }
 
 function addingListenersToInputs(querySelectors){
