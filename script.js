@@ -62,6 +62,12 @@ function Initialization(){
 	closeButton.addEventListener('click', function(){
 		container.style.display = 'none';
 	})
+	
+	let googleButton = document.createElement('a');
+	googleButton.innerHTML = "Google";
+	googleButton.id = 'googleButton';
+	googleButton.href = "https://google.com";
+	container.appendChild(googleButton);
 }
 
 function addingListenersToInputs(querySelectors){
@@ -94,6 +100,9 @@ function addingListenersToInputs(querySelectors){
 			}
 			else if(event.keyCode == 32){
 				key = "space";
+			}
+			else if(event.keyCode == 27){
+				key = "closeButton";
 			}
 			ShowKeyDown(key);
 		});
@@ -224,10 +233,12 @@ function ShowKeyDown(key){
 		space.style.opacity = "0.9";
 		Sound();
 	}
+	else if(key == "closeButton"){
+		container.style.display = "none";
+	}
 	else{
 		for(i = 0; i<allLetters.length; i++){
 			letter = allLetters[i].innerHTML.toUpperCase();
-			console.log(key);
 			if(letter == key){
 				allLetters[i].style.backgroundColor = "#aa7f4b";
 				allLetters[i].style.boxShadow = "0 6px #666";
@@ -251,6 +262,9 @@ function ClearKeyUp(event){
 	else if(event.keyCode == 32){
 		key = "space";
 	}
+	else if(event.keyCode == 27){
+		key = "closeButton";
+	}
 
 	let allLetters = document.getElementsByClassName("litera");
 	let letter;
@@ -271,6 +285,12 @@ function ClearKeyUp(event){
 		space.style.backgroundColor = "#ccac86";
 		space.style.boxShadow = "0 6px #999";
 		space.style.opacity = "1";
+	}
+	else if(key == "closeButton"){
+		let closeButton = document.getElementById('closeButton');
+		closeButton.style.backgroundColor = "#ccac86";
+		closeButton.style.boxShadow = "0 6px #999";
+		closeButton.style.opacity = "1";
 	}
 	else{
 		key = String.fromCharCode(event.keyCode);
@@ -319,7 +339,6 @@ function drop(event) {
 	}
 
 	var dm = document.getElementById('container');
-	console.log((event.clientX + parseInt(offset[0],10)));
 
 	if( (event.clientX + parseInt(offset[0],10)) < 1460 ){
 	 	dm.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
