@@ -12,6 +12,7 @@ var container = document.getElementById('container');
 var stateOfCapsLock = false;
 var focusedInput;
 var intervalHandler;
+var numbersAndSpecialsState = false;
 
 Initialization();
 
@@ -27,19 +28,29 @@ function Initialization(){
 	container.appendChild(newCapsLock);
 	newCapsLock.addEventListener('click', function(){
 		CapsLock();
+		focusedInput.focus();
 	});
 
 	let newKeyboard = document.createElement('div');
 	newKeyboard.id = "keyboard";
 	container.appendChild(newKeyboard);
 
-	let	allInputs = document.querySelectorAll('input[type=text]');
-	addingListenersToInputs(allInputs);
+	let	inp = document.querySelectorAll('input[type=text]');
+	addingListenersToInputs(inp);
 	let	inp1 = document.querySelectorAll('input[type=search]');
 	addingListenersToInputs(inp1);
-
 	let	inp2 = document.querySelectorAll('input[type=""]');
 	addingListenersToInputs(inp2);
+	let	inp3 = document.querySelectorAll('input[type=email]');
+	addingListenersToInputs(inp3);
+	let	inp4 = document.querySelectorAll('input[type=password]');
+	addingListenersToInputs(inp4);
+	let	inp5 = document.querySelectorAll('input[type=number]');
+	addingListenersToInputs(inp5);
+	let	inp6 = document.querySelectorAll('input[type=url]');
+	addingListenersToInputs(inp6);
+	let	inp7 = document.querySelectorAll('input:not([type])');
+	addingListenersToInputs(inp7);
 	
 	let newBackspace= document.createElement('div');
 	newBackspace.innerHTML = "Backspace";
@@ -68,6 +79,26 @@ function Initialization(){
 	googleButton.id = 'googleButton';
 	googleButton.href = "https://google.com";
 	container.appendChild(googleButton);
+	
+	let numberAndSpecialsButton = document.createElement('div');
+	numberAndSpecialsButton.innerHTML = "Specials";
+	numberAndSpecialsButton.id = 'numberAndSpecialsButton';
+	container.appendChild(numberAndSpecialsButton);
+	numberAndSpecialsButton.addEventListener('click', function(){
+		if(numbersAndSpecialsState){
+			numberAndSpecialsButton.innerHTML = "Specials";
+			numbersAndSpecialsState = false;
+			newCapsLock.style.display = "block";
+			Keyboard();
+			focusedInput.focus();
+		}else{
+			numberAndSpecialsButton.innerHTML = "Letters";
+			numbersAndSpecialsState = true;
+			newCapsLock.style.display = "none";
+			Keyboard();
+			focusedInput.focus();
+		}
+	});
 }
 
 function addingListenersToInputs(querySelectors){
@@ -117,13 +148,19 @@ function Keyboard(){
 	let numberOfLetters;
 	let greatQWERTY = "QWERTYUIOP{}ASDFGHJKL:\"|ZXCVBNM<>?";
 	let smallQWERTY = "qwertyuiop[]asdfghjkl;'\\zxcvbnm,./";
+	let numbersAndSpecials = "1234567890-=~!@#$%^&*()_+ęóąłżźćń";
 
-	if(stateOfCapsLock == false){
-		chosenTypeOfLetters = smallQWERTY;
-		numberOfLetters = smallQWERTY.length;
+	if(numbersAndSpecialsState){
+		chosenTypeOfLetters = numbersAndSpecials;
+		numberOfLetters = numbersAndSpecials.length;
 	}else{
-		chosenTypeOfLetters = greatQWERTY;
-		numberOfLetters = greatQWERTY.length;
+		if(stateOfCapsLock == false){
+			chosenTypeOfLetters = smallQWERTY;
+			numberOfLetters = smallQWERTY.length;
+		}else{
+			chosenTypeOfLetters = greatQWERTY;
+			numberOfLetters = greatQWERTY.length;
+		}
 	}
 
 	let keys = "";
@@ -164,6 +201,8 @@ function WritingFromKeyboard(clickedLetter){
 		focusedInput.value += ">";
 	}else if(clickedLetter.innerHTML == "Space"){
 		focusedInput.value += " ";
+	}else if(clickedLetter.innerHTML == "&amp;"){
+		focusedInput.value += "&";
 	}else{
 		focusedInput.value += clickedLetter.innerHTML;
 	}
@@ -181,7 +220,6 @@ function CapsLock(){
 		stateOfCapsLock = true;
 	}
 	Keyboard();
-	focusedInput.focus();
 }
 
 function Backspace(){
@@ -225,6 +263,7 @@ function ShowKeyDown(key){
 		capslock.style.boxShadow = "0 6px #666";
 		capslock.style.opacity = "0.9";
 		CapsLock();
+		focusedInput.focus();
 	}
 	else if(key == "space"){
 		let space = document.getElementById('space');
