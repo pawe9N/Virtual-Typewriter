@@ -10,6 +10,8 @@
 	user-select: none;
 	overflow: hidden;
 	z-index: 2147483647;
+	cursor: move;
+	border: 0.4em solid #e5d5c2;
 }
 
 #capslock{
@@ -120,4 +122,8 @@
 	font-size: 1.3em;
 	color: white;
 	box-shadow: 0 6px #999;
+}
+
+.special{
+	background-color: #a3896b;
 }

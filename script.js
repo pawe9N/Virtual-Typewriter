@@ -168,7 +168,13 @@ function Keyboard(){
 	for(var i=0; i<numberOfLetters; i++)
 	{
 		key = chosenTypeOfLetters.charAt(i);
-		keys += "<div class='litera'>"+key+"</div>";
+		if((key.charCodeAt(0) >= 48) && (key.charCodeAt(0) <= 57) ||
+		   (key.charCodeAt(0) >= 65) && (key.charCodeAt(0) <= 90) ||
+		   (key.charCodeAt(0) >= 97) && (key.charCodeAt(0) <= 122)){
+				keys += "<div class='litera'>"+key+"</div>";
+		}else{
+			keys += "<div class='litera special'>"+key+"</div>";
+		}
 		if(i==11) keys+="<div style='clear: both;'>";
 		else if(i==23) keys+="<div class='bottom' style='clear: both;'>";
 		else if(i==numberOfLetters-1){
