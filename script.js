@@ -123,14 +123,15 @@ function addingListenersToInputs(querySelectors){
 				let rect = focusedInput.getBoundingClientRect();
 				container.style.top = rect.bottom + "px";
 				container.style.left = rect.left + "px";
+				focusedInput.style.backgroundColor = "#f9f6f2";	
 			}
-			focusedInput.style.backgroundColor = "yellow";	
 			container.style.display = "flex";
 			showingKeyboard();
 			setWriting();
 		})
 		querySelectors[i].addEventListener('blur', function(){
-			this.style.backgroundColor = "white";
+			if(focusedInput != this)
+				this.style.backgroundColor = "white";
 		})
 		querySelectors[i].addEventListener('keydown', function (event){
 			let key = String.fromCharCode(event.keyCode);
@@ -179,10 +180,10 @@ function showingKeyboard(){
 		if((key.charCodeAt(0) >= 48) && (key.charCodeAt(0) <= 57) ||
 		   (key.charCodeAt(0) >= 65) && (key.charCodeAt(0) <= 90) ||
 		   (key.charCodeAt(0) >= 97) && (key.charCodeAt(0) <= 122)){
-				keys += "<div class='letter'>"+key+"</div>";
+				keys += "<div class='letter'>"+ key +"</div>";
 		}
 		else{
-			keys += "<div class='letter special'>"+key+"</div>";
+			keys += "<div class='letter special'>"+ key +"</div>";
 		}
 
 		if(i==11)
