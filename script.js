@@ -57,7 +57,11 @@ function Initialization(){
 	newBackspace.id = "backspace";
 	container.appendChild(newBackspace);
 	newBackspace.addEventListener('click', function(){
-		Backspace();
+		if(focusedInput.selectionStart == focusedInput.selectionEnd){
+			Backspace();
+		}else{
+			MarkedBackspace();
+		}
 	});
 	newBackspace.addEventListener('mousedown', function(){
 		Backspace2();
@@ -236,6 +240,16 @@ function Backspace(){
 	focusedInput.value = partOfInputBeforeSelector + partOfInputAfterSelecetor;
 	focusedInput.focus();
 	focusedInput.setSelectionRange(whereIsSelector-1,whereIsSelector-1);
+}
+
+function MarkedBackspace(){
+	Sound();
+	let whereIsSelector = focusedInput.value.slice(0, focusedInput.selectionStart).length;
+	let text = focusedInput.value;
+	text = text.slice(0, focusedInput.selectionStart) + text.slice(focusedInput.selectionEnd);
+	focusedInput.value = text;
+	focusedInput.focus();
+	focusedInput.setSelectionRange(whereIsSelector,whereIsSelector);
 }
 
 function Backspace2(){
