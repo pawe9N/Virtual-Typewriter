@@ -395,16 +395,14 @@ function drop(event) {
 	catch(e) {
 	    offset = offset_data.split(',');
 	}
-   console.log( limitedWidth);
-   console.log( (event.clientX + parseInt(offset[0], 10)));
+	
 	if( (event.clientX + parseInt(offset[0], 10)) < limitedWidth){
 	 	container.style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
 	}
 	else{
 		container.style.left =  limitedWidth + "px";console.log("yes");
 	}
-	console.log(container.style.left);
-	console.log(" ");
+	
 	container.style.top = (event.clientY + parseInt(offset[1], 10)) + 'px';
 	event.preventDefault();
 	return false;
