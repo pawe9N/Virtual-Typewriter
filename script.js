@@ -3,8 +3,12 @@ var stateOfCapsLock = false;
 var focusedInput;
 var intervalHandler;
 var numbersAndSpecialsState = false;
+var limitedWidth;
 
 initialization();
+window.addEventListener('resize', function(){
+	limitedWidth = window.innerWidth - container.offsetWidth * 1.3;
+});
 
 function initialization(){
 
@@ -114,6 +118,13 @@ function addingInputs(){
 
 function addingListenersToInputs(querySelectors){
 	for(i=0; i<querySelectors.length; i++){
+
+		if(querySelectors[i].type == "email" || 
+			querySelectors[i].type == "number" ||
+			querySelectors[i].type == "password"){
+			querySelectors[i].type = "text";
+		}
+
 		querySelectors[i].addEventListener('mousemove', function(){
 			stateOfCapsLock = event.getModifierState('CapsLock');
 		});
@@ -196,6 +207,8 @@ function showingKeyboard(){
 		}
 	}
 	document.getElementById('keyboard').innerHTML = keys;
+
+	limitedWidth = window.innerWidth - container.offsetWidth * 1.3;
 }
 
 function setWriting(){
@@ -241,11 +254,11 @@ function capslock(){
 function backspace(){
 	sound();
 	let whereIsSelector = focusedInput.value.slice(0, focusedInput.selectionStart).length;
-	let partOfInputBeforeSelector = focusedInput.value.substring(0, whereIsSelector-1);
+	let partOfInputBeforeSelector = focusedInput.value.substring(0, whereIsSelector - 1);
 	let partOfInputAfterSelecetor = focusedInput.value.substring(whereIsSelector, focusedInput.value.length);
 	focusedInput.value = partOfInputBeforeSelector + partOfInputAfterSelecetor;
 	focusedInput.focus();
-	focusedInput.setSelectionRange(whereIsSelector-1,whereIsSelector-1);
+	focusedInput.setSelectionRange(whereIsSelector - 1, whereIsSelector - 1);
 }
 
 function markedBackspace(){
@@ -255,12 +268,15 @@ function markedBackspace(){
 	text = text.slice(0, focusedInput.selectionStart) + text.slice(focusedInput.selectionEnd);
 	focusedInput.value = text;
 	focusedInput.focus();
-	focusedInput.setSelectionRange(whereIsSelector,whereIsSelector);
+	focusedInput.setSelectionRange(whereIsSelector, whereIsSelector);
 }
 
 function backspacePressed(){
 	intervalHandler = setInterval(function(){
-		backspace();
+		if(focusedInput.value != "")
+			backspace();
+		else
+			backspacePressedOut();
 	},200);
 }
 
@@ -350,7 +366,7 @@ function clearKeyUp(event){
 
 function dragStart(event) {
 	let style = window.getComputedStyle(event.target, null);
-	offset_data = (parseInt(style.getPropertyValue("left"),10) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top"),10) - event.clientY);
+	offset_data = (parseInt(style.getPropertyValue("left"), 10) - event.clientX) + ',' + (parseInt(style.getPropertyValue("top"), 10) - event.clientY);
 	event.dataTransfer.setData("text/plain",offset_data);
 } 
 
@@ -364,8 +380,8 @@ function dragOver(event) {
 	    offset = offset_data.split(',');
 	}
 
-	container.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
-	container.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
+	container.style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
+	container.style.top = (event.clientY + parseInt(offset[1], 10)) + 'px';
 	event.preventDefault(); 
 	return false; 
 } 
@@ -379,15 +395,17 @@ function drop(event) {
 	catch(e) {
 	    offset = offset_data.split(',');
 	}
-
-	if( (event.clientX + parseInt(offset[0],10)) < 1460 ){
-	 	container.style.left = (event.clientX + parseInt(offset[0],10)) + 'px';
+   console.log( limitedWidth);
+   console.log( (event.clientX + parseInt(offset[0], 10)));
+	if( (event.clientX + parseInt(offset[0], 10)) < limitedWidth){
+	 	container.style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
 	}
 	else{
-		container.style.left =  1459 + "px";
+		container.style.left =  limitedWidth + "px";console.log("yes");
 	}
-
-	container.style.top = (event.clientY + parseInt(offset[1],10)) + 'px';
+	console.log(container.style.left);
+	console.log(" ");
+	container.style.top = (event.clientY + parseInt(offset[1], 10)) + 'px';
 	event.preventDefault();
 	return false;
 } 
