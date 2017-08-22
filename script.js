@@ -400,7 +400,7 @@ function drop(event) {
 	 	container.style.left = (event.clientX + parseInt(offset[0], 10)) + 'px';
 	}
 	else{
-		container.style.left =  limitedWidth + "px";console.log("yes");
+		container.style.left =  limitedWidth + "px";
 	}
 	
 	container.style.top = (event.clientY + parseInt(offset[1], 10)) + 'px';
