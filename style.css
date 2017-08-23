@@ -1,7 +1,7 @@
 #container[draggable="true"]{
 	display: none;
 	position: fixed;
-	background-color: #323232;
+	background-color: #ccac86;
 	background: url('http://ninnalu.typepad.com/.a/6a014e5fd24b87970c01b7c73a7827970b-pi');
 	border-radius: 0.5em;
 	font-family: 'Special Elite', cursive;
@@ -18,7 +18,7 @@
 	padding: 0.3em;
 	border-radius: 2em;
 	position: absolute;
-	left: 1em;
+	left: 0.9em;
 	top: 0.5em;
 	font-size: 1.4em;
 	color: white;
@@ -72,7 +72,7 @@
 	padding: 0.3em;
 	border-radius: 2em;
 	position: absolute;
-	right: 1em;
+	right: 0.9em;
 	top: 0.5em;
 	font-size: 1.4em;
 	color: white;
@@ -115,7 +115,7 @@
 	padding: 0.3em;
 	border-radius: 2em;
 	position: absolute;
-	left: 8.4em;
+	left: 37%;
 	top: 0.4em;
 	font-size: 1.3em;
 	color: white;

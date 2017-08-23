@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+	<style>
+		body{
+			background-color: #ccac86;
+			color: white;
+		}
+		div{
+			width: 300px;
+			overflow: hidden;
+		}
+		h2{
+			white-space: nowrap;
+			animation: sliding 6s linear infinite;
+		}
+		@keyframes sliding
+		{
+		  0% { 
+		  	   transform: translateX(0);
+			   padding-left: 290%;
+			}
+		  100% { 
+		  		transform: translateX(-145%);
+				padding-left: 290%;
+		   }
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<h2>To show keyboard you have to click at an input!</h2>
+	</div>
+</body>

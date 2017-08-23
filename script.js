@@ -6,15 +6,15 @@ var numbersAndSpecialsState = false;
 var limitedWidth;
 
 initialization();
-window.addEventListener('resize', function(){
-	limitedWidth = window.innerWidth - container.offsetWidth * 1.3;
-});
 
 function initialization(){
 
 	addingInputs();
-	var container = document.getElementById('container');
 	creatingDivs();
+	var container = document.getElementById('container');
+	window.addEventListener('resize', function(){
+		limitedWidth = window.innerWidth - container.offsetWidth * 1.3;
+	});
 	
 }
 
@@ -114,6 +114,8 @@ function addingInputs(){
 	addingListenersToInputs(inp6);
 	let	inp7 = document.querySelectorAll('input:not([type])');
 	addingListenersToInputs(inp7);
+	let	inp8 = document.getElementsByTagName('textarea');
+	addingListenersToInputs(inp8);
 }
 
 function addingListenersToInputs(querySelectors){
