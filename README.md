@@ -20,34 +20,39 @@ If you want to use this program, you have to download all files. Then you have t
 
 - Adding text to input
 
-<gif>
+<a href="https://imgflip.com/gif/1ul7ah"><img src="https://i.imgflip.com/1ul7ah.gif" title="made at imgflip.com"/></a>
 
 
 - How to delete text from input by backspace button
 
-<gif>
+<a href="https://imgflip.com/gif/1ul7hw"><img src="https://i.imgflip.com/1ul7hw.gif" title="made at imgflip.com"/></a>
 
 
 - How capslock works
 
-<gif>
+<a href="https://imgflip.com/gif/1ul8b1"><img src="https://i.imgflip.com/1ul8b1.gif" title="made at imgflip.com"/></a>
 
 
 - Special button
 
-<gif>
+<a href="https://imgflip.com/gif/1ul8o9"><img src="https://i.imgflip.com/1ul8o9.gif" title="made at imgflip.com"/></a>
 
 
 - Drag and drop
 
-<gif>
+<a href="https://imgflip.com/gif/1ul9ge"><img src="https://i.imgflip.com/1ul9ge.gif" title="made at imgflip.com"/></a>
 
 
 - Going to google browser
 
-<gif>
+<a href="https://imgflip.com/gif/1ul9v8"><img src="https://i.imgflip.com/1ul9v8.gif" title="made at imgflip.com"/></a>
 
 
 - Close keyboard
 
-<gif>
+<a href="https://imgflip.com/gif/1ulae6"><img src="https://i.imgflip.com/1ulae6.gif" title="made at imgflip.com"/></a>
+
+
+- If you have the physical keyboard, then you can see shadow effect, when you press keys.
+
+<a href="https://imgflip.com/gif/1uld5c"><img src="https://i.imgflip.com/1uld5c.gif" title="made at imgflip.com"/></a>
