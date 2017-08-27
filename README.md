@@ -53,6 +53,6 @@ If you want to use this program, you have to download all files. Then you have t
 <a href="https://imgflip.com/gif/1ulae6"><img src="https://i.imgflip.com/1ulae6.gif" title="made at imgflip.com"/></a>
 
 
-- If you have the physical keyboard, then you can see shadow effect, when you press keys.
+- If you have the physical keyboard, then you can see click effect, when you press keys.
 
 <a href="https://imgflip.com/gif/1uld5c"><img src="https://i.imgflip.com/1uld5c.gif" title="made at imgflip.com"/></a>
