@@ -10,49 +10,49 @@ If you want to use this program, you have to download all files. Then you have t
 
 - Popup with first and last guide for user
 
-<a href="https://imgflip.com/gif/1ul5oa"><img src="https://i.imgflip.com/1ul5oa.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/l1J9xayUCsGQeLwti/giphy.gif"/>
 
 
 - Showing Keyboard by clicked some inputs
 
-<a href="https://imgflip.com/gif/1ul6ga"><img src="https://i.imgflip.com/1ul6ga.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/3o7aD7rsFSAL9X5giY/giphy.gif"/>
 
 
 - Adding text to input
 
-<a href="https://imgflip.com/gif/1ul7ah"><img src="https://i.imgflip.com/1ul7ah.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/3o7aDaPjhiHlCaPqY8/giphy.gif"/>
 
 
 - How to delete text from input by backspace button
 
-<a href="https://imgflip.com/gif/1ul7hw"><img src="https://i.imgflip.com/1ul7hw.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/xT9IgmurdQUNxGkOBy/giphy.gif"/>
 
 
 - How capslock works
 
-<a href="https://imgflip.com/gif/1ul8b1"><img src="https://i.imgflip.com/1ul8b1.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/3o7aDbJEhVPblde3ZK/giphy.gif"/>
 
 
 - Special button
 
-<a href="https://imgflip.com/gif/1ul8o9"><img src="https://i.imgflip.com/1ul8o9.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/3ov9jJ0imSxxwuigb6/giphy.gif"/>
 
 
 - Drag and drop
 
-<a href="https://imgflip.com/gif/1ul9ge"><img src="https://i.imgflip.com/1ul9ge.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/l378eMeTgAIgkT4Xu/giphy.gif"/>
 
 
 - Going to google browser
 
-<a href="https://imgflip.com/gif/1ul9v8"><img src="https://i.imgflip.com/1ul9v8.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/l378dkuiTM5HhEB7a/giphy.gif"/>
 
 
 - Close keyboard
 
-<a href="https://imgflip.com/gif/1ulae6"><img src="https://i.imgflip.com/1ulae6.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/xT9IgyGF4AeZDM8wCI/giphy.gif"/>
 
 
 - If you have the physical keyboard, then you can see click effect, when you press keys.
 
-<a href="https://imgflip.com/gif/1uld5c"><img src="https://i.imgflip.com/1uld5c.gif" title="made at imgflip.com"/></a>
+<img src="https://media.giphy.com/media/3o7aD6f7CsJWSTRife/giphy.gif"/>
