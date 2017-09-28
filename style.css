@@ -1,8 +1,6 @@
 #container[draggable="true"]{
 	display: none;
 	position: fixed;
-	background-color: #ccac86;
-	background: url('http://ninnalu.typepad.com/.a/6a014e5fd24b87970c01b7c73a7827970b-pi');
 	border-radius: 0.5em;
 	font-family: 'Special Elite', cursive;
 	user-select: none;

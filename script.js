@@ -12,6 +12,8 @@ function initialization(){
 	addingInputs();
 	creatingDivs();
 	var container = document.getElementById('container');
+	let imgURL = chrome.extension.getURL("images/machine.png");
+	container.style.backgroundImage = "url('"+imgURL+"')";
 	window.addEventListener('resize', function(){
 		limitedWidth = window.innerWidth - container.offsetWidth * 1.3;
 	});
@@ -287,7 +289,8 @@ function backspacePressedOut(){
 }
 
 function sound(){
-	let audio = new Audio("https://www.soundjay.com/communication/sounds/typewriter-key-1.mp3");
+	let imgURL = chrome.extension.getURL("audio/typewriterKey.mp3");
+	let audio = new Audio(imgURL);
 	audio.play();
 }
 
