@@ -1,6 +1,10 @@
 # Keyboard Extension for chrome - "Virtual Typewriter"
 
-Virtual Typewriter is an extension for chrome, which was made for purpose of learning javascript. This extension isn't great and isn't deprived of bugs. So if you want to use this extension, keep it in mind.
+Virtual Typewriter is an extension for chrome, which was made for purpose of learning javascript.
+
+## Description of plugin
+It can help you with typing letters without keyboard.
+This extension isn't great and isn't deprived of bugs, so if you want to use this plugin, keep it in mind.
 
 ## Getting Started
 
