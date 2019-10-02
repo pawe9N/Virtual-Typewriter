@@ -14,49 +14,49 @@ If you want to use this program, you have to download all files. Then you have t
 
 - Popup with first and last guide for user
 
-<img src="https://media.giphy.com/media/l1J9xayUCsGQeLwti/giphy.gif"/>
+<img src="https://i.imgur.com/3ctMWvU.gif"/>
 
 
 - Showing Keyboard by clicked some inputs
 
-<img src="https://media.giphy.com/media/3o7aD7rsFSAL9X5giY/giphy.gif"/>
+<img src="https://i.imgur.com/yBH7b6v.gif"/>
 
 
 - Adding text to input
 
-<img src="https://media.giphy.com/media/3o7aDaPjhiHlCaPqY8/giphy.gif"/>
+<img src="https://i.imgur.com/frEpTmC.gif"/>
 
 
 - How to delete text from input by backspace button
 
-<img src="https://media.giphy.com/media/xT9IgmurdQUNxGkOBy/giphy.gif"/>
+<img src="https://i.imgur.com/Ve2l4e8.gif"/>
 
 
 - How capslock works
 
-<img src="https://media.giphy.com/media/3o7aDbJEhVPblde3ZK/giphy.gif"/>
+<img src="https://i.imgur.com/Ve2l4e8.gif"/>
 
 
 - Special button
 
-<img src="https://media.giphy.com/media/3ov9jJ0imSxxwuigb6/giphy.gif"/>
+<img src="https://i.imgur.com/Ve2l4e8.gif"/>
 
 
 - Drag and drop
 
-<img src="https://media.giphy.com/media/l378eMeTgAIgkT4Xu/giphy.gif"/>
+<img src="https://i.imgur.com/7g2cLEg.gif"/>
 
 
 - Going to google browser
 
-<img src="https://media.giphy.com/media/l378dkuiTM5HhEB7a/giphy.gif"/>
+<img src="https://i.imgur.com/0wBIJJd.gif"/>
 
 
 - Close keyboard
 
-<img src="https://media.giphy.com/media/xT9IgyGF4AeZDM8wCI/giphy.gif"/>
+<img src="https://i.imgur.com/STpN1NG.gif"/>
 
 
 - If you have the physical keyboard, then you can see click effect, when you press keys.
 
-<img src="https://media.giphy.com/media/3o7aD6f7CsJWSTRife/giphy.gif"/>
+<img src="https://i.imgur.com/bRHzvRG.gif"/>
